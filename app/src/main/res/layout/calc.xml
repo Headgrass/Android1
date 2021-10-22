@@ -46,7 +46,8 @@
                     android:id="@+id/btn_backspace"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
                     android:text="bspce" />
             </TableRow>
 
@@ -91,18 +92,21 @@
                     android:id="@+id/btn4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
                     android:text="4" />
 
                 <Button
                     android:id="@+id/btn5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
                     android:text="5" />
 
                 <Button
                     android:id="@+id/btn6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
                     android:text="6" />
 
                 <Button
@@ -121,18 +125,21 @@
                     android:id="@+id/btn1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
                     android:text="1" />
 
                 <Button
                     android:id="@+id/btn2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
                     android:text="2" />
 
                 <Button
                     android:id="@+id/btn3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
                     android:text="3" />
 
                 <Button
@@ -151,18 +158,21 @@
                     android:id="@+id/btn_plusminus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
                     android:text="+/-" />
 
                 <Button
                     android:id="@+id/btn0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
                     android:text="0" />
 
                 <Button
                     android:id="@+id/btn_equals"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
                     android:text="=" />
 
                 <Button
