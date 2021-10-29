@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView textView;
-    Integer temp1, temp2;
+    int temp1, temp2;
 
     boolean boolplus, boolminus, booldivided, boolmulty;
 
@@ -17,7 +17,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calc);
-
+        boolplus = false;
+        boolminus = false;
+        booldivided = false;
+        boolmulty = false;
         textView = findViewById(R.id.windcalc);
 
 
@@ -76,67 +79,64 @@ public class MainActivity extends AppCompatActivity {
         buttonminus.setOnClickListener(v -> {
             if (textView == null) {
                 textView.setText("");
-            } else
+            } else {
                 temp1 = Integer.parseInt(textView.getText() + "");
-            boolminus = true;
-            textView.setText(null);
-
+                boolminus = true;
+                textView.setText(null);
+            }
         });
 
 
         buttonplus.setOnClickListener(v -> {
             if (textView == null) {
                 textView.setText("");
-            } else
+            } else {
                 temp1 = Integer.parseInt(textView.getText() + "");
-            boolplus = true;
-            textView.setText(null);
+                boolplus = true;
+                textView.setText(null);
+            }
         });
 
         buttonmultiply.setOnClickListener(v -> {
             if (textView == null) {
                 textView.setText("");
-            } else
+            } else {
                 temp1 = Integer.parseInt(textView.getText() + "");
-            boolmulty = true;
-            textView.setText(null);
+                boolmulty = true;
+                textView.setText(null);
+            }
         });
 
         buttondivided.setOnClickListener(v -> {
             if (textView == null) {
                 textView.setText("");
-            } else
+            } else {
                 temp1 = Integer.parseInt(textView.getText() + "");
-            booldivided = true;
-            textView.setText(null);
+                booldivided = true;
+                textView.setText(null);
+            }
         });
 
         buttonequals.setOnClickListener(v -> {
             temp2 = Integer.parseInt(textView.getText() + "");
 
-            if (booldivided = true) {
-                textView.setText(temp1 / temp2 + "");
-                booldivided = false;
-            } else
-                textView.setText("0");
-
-            if (boolmulty = true) {
-                textView.setText(temp1 * temp2 + "");
-                boolmulty = false;
-            } else
-                textView.setText("0");
-
-            if (boolplus = true) {
-                textView.setText(temp1 + temp2 + "");
-                boolplus = false;
-            } else
-                textView.setText("0");
-
             if (boolminus = true) {
                 textView.setText(temp1 - temp2 + "");
                 boolminus = false;
-            } else
-                textView.setText("0");
+            }
+            if (boolplus = true) {
+                textView.setText(temp1 + temp2 + "");
+                boolplus = false;
+            }
+            if (boolmulty = true) {
+                textView.setText(temp1 * temp2 + "");
+                boolmulty = false;
+            }
+
+            if (booldivided = true) {
+                textView.setText(temp1 / temp2 + "");
+                booldivided = false;
+            }
         });
 /*
         findViewById(R.id.btn_settings).setOnClickListener(v -> setContentView(R.layout.settings));
