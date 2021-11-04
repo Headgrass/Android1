@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Добро пожаловать за кредитом!"
+        android:text="Тестовое приложение"
         android:textColor="#21F129"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -28,15 +28,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_hello" />
 
-    <Button
-        android:id="@+id/btn_anketa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Заполнить анкету"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_settings" />
 
     <Button
         android:id="@+id/btn_calc"
@@ -49,7 +40,7 @@
         app:layout_constraintBottom_toTopOf="@+id/calendarView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_anketa" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_settings" />
 
     <CalendarView
         android:id="@+id/calendarView"

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -9,7 +11,10 @@
         android:id="@+id/header_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Заявка на кредит" />
+        android:text="Настройки"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -118,10 +123,36 @@
             android:ems="10"
             android:inputType="textPassword" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btnBack"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="назад" />
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/set_tv_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выбор темы"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_settings" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/sw_day_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="16dp"
+            android:showText="false"
+            android:splitTrack="false"
+            android:text="светлая"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/set_tv_theme"
+            app:layout_constraintTop_toTopOf="@+id/set_tv_theme" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/set_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сохранить"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </LinearLayout>
